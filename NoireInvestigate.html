@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Noire Investigate.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Noire Investigate" startnode="1" creator="Twine" creator-version="2.8.0" format="Harlowe" format-version="3.3.7" ifid="726D27BE-34F7-451E-86A0-2DEA45F0C0CB" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Noire Investigate" startnode="1" creator="Twine" creator-version="2.8.0" format="Harlowe" format-version="3.3.7" ifid="726D27BE-34F7-451E-86A0-2DEA45F0C0CB" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 tw-story[tags~="start"] {
  background-image:url("https://i.pinimg.com/originals/a8/50/71/a85071ae595c074e067d6cd7326dca86.gif");
 background-size:100%;
@@ -31,18 +31,30 @@ background-repeat:no-repeat;
 background-position:bottom;
 }
 
+tw-story[tags~="choosing"] {
+ background-image:url("https://i.pinimg.com/originals/8e/1e/85/8e1e853313ace4ffcf50b56f22f844d4.gif");
+background-size:500px;
+background-repeat:no-repeat;
+background-position:bottom;
+}
+
+
 tw-story {
  background-image:url("https://i.pinimg.com/originals/31/d3/31/31d3311df9f041e49b1751a2dc8f31c4.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
+padding:64px 250px;
 }
 
 
 tw-passage {
     font-family: Courier;
-  	padding:48px;
+  	font-size: 20px;
     color:#f1f3f5;
+    display:flex;
+  	padding:48px 0;
+  	gap:20px;
 }
 
 tw-link {
@@ -52,36 +64,41 @@ tw-link {
 
 .enchantment-link:hover, tw-link:hover {
   color: #d8f5a2;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="start" color="green"></tw-tag><tw-tag name="analyse" color="orange"></tw-tag><tw-tag name="Ending" color="purple"></tw-tag><tw-tag name="halfending" color="blue"></tw-tag><tw-passagedata pid="1" name="Start" tags="start" position="600,600" size="100,100">&quot;Wake up&quot;...
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="start" color="green"></tw-tag><tw-tag name="analyse" color="orange"></tw-tag><tw-tag name="Ending" color="purple"></tw-tag><tw-tag name="halfending" color="blue"></tw-tag><tw-tag name="choosing" color="yellow"></tw-tag><tw-passagedata pid="1" name="Start" tags="start" position="575,1275" size="100,100">&lt;div&gt;
+&quot;Wake up&quot;...
 ...
 &quot;Wake up&quot;...
 ...
 &quot;Wake up right now&quot;
 
-[[Open your eyes]]</tw-passagedata><tw-passagedata pid="2" name="Observe the body" tags="" position="1500,300" size="100,100">You carefully approach the body, examining it closely:
+[[Open your eyes]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Observe the body" tags="" position="1525,1275" size="100,100">&lt;div&gt;
+You carefully approach the body, examining it closely:
 
 Putting your paws on the chest, there is no heartbeat.
 Leaning your head to the face, there is no breath.
 But the body is still warm.
+[[You feel something]]
 
-Being a cat, you become way more sensitive to almost everything around you - temperature, sound, light, and smell, except for color.
+&lt;/div&gt;
 
-&quot;The smell?&quot; You notice an abnormal odor. You&#39;ve been smelling it since you woke up, but only till now do you realize what it is.
+&lt;img src=&quot;https://i.pinimg.com/originals/9c/e6/60/9ce660a3c5047d4d319ee10533ce8e06.jpg&quot;
+style=&quot;width:400px;align-self: center&quot;&gt;
+</tw-passagedata><tw-passagedata pid="3" name="Open your eyes" tags="" position="750,1275" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/1e/9c/8e/1e9c8e07434bdcfdb42412e0cbbbcb16.jpg&quot; style=&quot;width:400px;&quot;&gt;
 
-&quot;Gas leak!&quot;
-
-You sprint toward the &#39;&#39;gas valve&#39;&#39;.
-
-Next to the gas valve, you find a puddle of water. You look up and see a lighter on an &#39;&#39;ice-made holder&#39;&#39; that is slowly melting in the sun.
-
-[[Try turning off the gas]]</tw-passagedata><tw-passagedata pid="3" name="Open your eyes" tags="" position="700,300" size="100,100">You awaken to the sight of a lifeless body lying inches away.
+&lt;div&gt;
+You awaken to the sight of a lifeless body lying inches away.
 
 &quot;Who is that... Is that... ME...?&quot;
 
 &quot;If that&#39;s me, what and who am I?&quot;
 
 [[Stand up and look down]]
-[[I must be dreaming, close my eye and start over]]</tw-passagedata><tw-passagedata pid="4" name="Stand up and look down" tags="" position="900,300" size="100,100">Looking down, you discover a sleek black coat of fur. As you move your hand, a black paw comes into view.
+[[I must be dreaming, close my eye and start over]]
+
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="4" name="Stand up and look down" tags="" position="950,1275" size="100,100">&lt;div&gt;
+Looking down, you discover a sleek black coat of fur. As you move your hand, a black paw comes into view.
 
 &quot;Where is&#39;&#39; Echo&#39;&#39;?&quot; Echo is your pet black cat.
 
@@ -90,14 +107,21 @@ A bold guess forms in your mind.
 &quot;It&#39;s impossible.&quot;
 
 [[Run to a mirror]]
-[[Walk around to find Echo]]</tw-passagedata><tw-passagedata pid="5" name="I must be dreaming, close my eye and start over" tags="start" position="750,150" size="100,100">&quot;Thump-thump&quot;
+[[Walk around to find Echo]]
+&lt;/div&gt;
+
+&lt;img src=&quot;https://i.pinimg.com/originals/11/f9/57/11f95745b47d1fb229db5b4be2988c97.jpg&quot; style=&quot;width:400px;&quot;&gt;</tw-passagedata><tw-passagedata pid="5" name="I must be dreaming, close my eye and start over" tags="start" position="850,1450" size="100,100">&lt;div&gt;
+&quot;Thump-thump&quot;
 &quot;Thump-thump&quot;
 &quot;Thump-thump&quot;
 ...
 &quot;No, it&#39;s not a dream&quot;
 You open your eyes again.
 
-[[Stand up and look down]] </tw-passagedata><tw-passagedata pid="6" name="Run to a mirror" tags="" position="1100,300" size="100,100">You gaze into the mirror, and a familiar cat face looks back at you.
+[[Stand up and look down]] 
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Run to a mirror" tags="" position="1150,1275" size="100,100">&lt;div&gt;
+You gaze into the mirror, and a familiar cat face looks back at you.
 
 &quot;Am I in Echo&#39;s body?&quot; A strange feeling washes over you.
 
@@ -107,7 +131,17 @@ You glance back at the human body lying on the ground, pondering, &quot;How can 
 
 The screen of your laptop suddenly turns on, emitting a beeping tone.
 
-[[Go to check the laptop]]</tw-passagedata><tw-passagedata pid="7" name="Walk around to find Echo" tags="" position="1000,100" size="100,100">Drinking fountain?
+[[Go to check the laptop]]
+
+&lt;/div&gt;
+
+&lt;img src=&quot;https://i.pinimg.com/originals/04/12/43/041243ff271fa73ff48ef308ddcd22fc.jpg&quot;
+style=&quot;width:400px;align-self: center&quot;&gt;
+</tw-passagedata><tw-passagedata pid="7" name="Walk around to find Echo" tags="" position="1050,1450" size="100,100">
+&lt;img src=&quot;https://i.pinimg.com/originals/8c/ca/56/8cca56eea5578a766e3943744ce85b4a.jpg&quot; style=&quot;width:400px;&quot;&gt;
+
+&lt;div&gt;
+Drinking fountain?
 Nope.
 Cat Tower?
 Nope.
@@ -115,7 +149,13 @@ Bed?
 Nope.
 ...
 
-[[Run to a mirror]] </tw-passagedata><tw-passagedata pid="8" name="Go to check the laptop" tags="" position="1300,300" size="100,100">The screen displays a message:
+[[Run to a mirror]] 
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Go to check the laptop" tags="" position="1325,1275" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/3e/74/0f/3e740f575e443a25d06848dcc9fc2ed0.jpg&quot;
+style=&quot;width:400px;align-self: center&quot;&gt;
+
+&lt;div&gt;
+The screen displays a message:
 
 
 //I know you can&#39;t type now. I&#39;m one of the victims, but can&#39;t talk here. Go find the pivot point, close your eyes, concentrate on your chosen moment, and &#39;&#39;you&#39;ll travel back in time&#39;&#39;. Only &#39;&#39;one&#39;&#39; chance. Stop these from happening. Hurry.//
@@ -123,33 +163,47 @@ Nope.
 
 You are confused, struggling to recall the past. Despite the uncertainty, you decide to investigate the room to understand the current situation.
 
-[[Observe the body]]</tw-passagedata><tw-passagedata pid="9" name="Jump over to the ice holder" tags="" position="1900,300" size="100,100">Jumping onto the shelf right next to it, you carefully remove the lighter from the ice holder, placing it on the shelf.
+[[Observe the body]]
 
-[[Return to the body]]</tw-passagedata><tw-passagedata pid="10" name="Try turning off the gas" tags="" position="1700,300" size="100,100">With your newfound feline agility, you climb onto a nearby table. Using your mouth and front paws, you nudge the lever of the gas valve, gradually turning it off.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Jump over to the ice holder" tags="" position="1875,1275" size="100,100">Jumping onto the shelf right next to it, you carefully remove the lighter from the ice holder, placing it on the shelf.
+
+[[Return to the body]]</tw-passagedata><tw-passagedata pid="10" name="Try turning off the gas" tags="" position="1725,1275" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/f6/f8/c8/f6f8c8ecbac22917cdcab8694e2221e8.jpg&quot; style=&quot;width:400px;align-self: center&quot;&gt;
+
+&lt;div&gt;
+With your newfound feline agility, you climb onto a nearby table. Using your mouth and front paws, you nudge the lever of the gas valve, gradually turning it off.
 
 [[Go search the room]]
-[[Jump over to the ice holder]]</tw-passagedata><tw-passagedata pid="11" name="Return to the body" tags="" position="2100,300" size="100,100">You return to the body and expect to find more clues.
+[[Jump over to the ice holder]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Return to the body" tags="choosing" position="2050,1275" size="100,100">You return to the body and expect to find more clues.
 
 [[Examine the body]]
 [[Examine the belongings]]
-[[Examine the room]]</tw-passagedata><tw-passagedata pid="12" name="Examine the body" tags="" position="2325,375" size="100,100">There are no injuries on the body, and it looks like it&#39;s asleep.
+[[Examine the room]]</tw-passagedata><tw-passagedata pid="12" name="Examine the body" tags="" position="2250,1150" size="100,100">There are no injuries on the body, and it looks like it&#39;s asleep.
 
 Using your feline sense of smell, you detect an uncanny odor on your human body underneath the gas. You use your paws to open its mouth and sniff carefully, and you find it smells like some kind of &#39;&#39;poison&#39;&#39;.
 
 [[Examine the belongings]]
-[[Examine the room]]</tw-passagedata><tw-passagedata pid="13" name="Examine the belongings" tags="" position="2375,200" size="100,100">There must be something within the clothes.
+[[Examine the room]]</tw-passagedata><tw-passagedata pid="13" name="Examine the belongings" tags="choosing" position="2250,1450" size="100,100">There must be something within the clothes.
 
 [[Check the pocket on the coat]]
-[[Check the pocket on the jeans]]</tw-passagedata><tw-passagedata pid="14" name="Examine the room" tags="" position="2400,600" size="100,100">Where do you want to start from?
+[[Check the pocket on the jeans]]
+
+</tw-passagedata><tw-passagedata pid="14" name="Examine the room" tags="choosing" position="2600,1275" size="100,100">Where do you want to start from?
 
 
 [[You catch a very unnoticeable light, flashing]]
+[[Check the desk]]</tw-passagedata><tw-passagedata pid="15" name="Go search the room" tags="" position="1700,1100" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/d9/e7/2c/d9e72c6a73ce8aedfa2d1b36c9231796.jpg&quot;
+style=&quot;width:400px;align-self: center&quot;&gt;
 
-[[Check the desk]]</tw-passagedata><tw-passagedata pid="15" name="Go search the room" tags="" position="1750,125" size="100,100">You wander around the room, searching for clues.
+&lt;div&gt;
+You wander around the room, searching for clues.
 
 Meanwhile, the sun continues heating the ice holder. As the ice melts down, the lighter drops and hits the ground. A massive explosion occurs, engulfing the entire house in flames.
 
-[[Blacked out]]</tw-passagedata><tw-passagedata pid="16" name="Blacked out" tags="start" position="1550,125" size="100,100">You hear that mysterious voice again.
+[[Blacked out]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Blacked out" tags="start" position="1550,1100" size="100,100">You hear that mysterious voice again.
 
 &quot;Wake up&quot;...
 ...
@@ -157,30 +211,30 @@ Meanwhile, the sun continues heating the ice holder. As the ice melts down, the 
 ...
 &quot;Wake up right now&quot;
 
-[[Open your eyes -&gt;Observe the body]]</tw-passagedata><tw-passagedata pid="17" name="Check the pocket on the coat" tags="" position="2575,200" size="100,100">There is a small flash drive.
+[[Open your eyes -&gt;Observe the body]]</tw-passagedata><tw-passagedata pid="17" name="Check the pocket on the coat" tags="" position="2450,1075" size="100,100">There is a small flash drive.
 
 You pick up the flash drive with your mouth, nudged it with your paws to the laptop. The laptop reads it as &#39;&#39;&quot;Skyler Evans&quot;&#39;&#39;, and there are a lot of documents - unfinished reports, articles, pictures, and audio recordings.
 
 You notice there is an &#39;&#39;encrypted folder&#39;&#39; named &quot;Project Forgery&quot;.
 
 [[Check the pocket on the jeans]]
-[[Examine the room]]</tw-passagedata><tw-passagedata pid="18" name="Check the pocket on the jeans" tags="" position="2575,400" size="100,100">There is one &#39;&#39;key&#39;&#39;. It&#39;s apparently not the key to your apartment.
+[[Examine the room]]</tw-passagedata><tw-passagedata pid="18" name="Check the pocket on the jeans" tags="" position="2450,1450" size="100,100">There is one &#39;&#39;key&#39;&#39;. It&#39;s apparently not the key to your apartment.
 
 Then what is it for?
 
 [[Check the pocket on the coat]]
-[[Examine the room]]</tw-passagedata><tw-passagedata pid="19" name="You catch a very unnoticeable light, flashing" tags="" position="2500,800" size="100,100">A hint of blue light comes through from the side of the Wi-Fi router. Using your common sense as a human being, you realize that a router shouldn&#39;t have a light like that. You push it to the ground with your paws.
+[[Examine the room]]</tw-passagedata><tw-passagedata pid="19" name="You catch a very unnoticeable light, flashing" tags="" position="2750,1150" size="100,100">A hint of blue light comes through from the side of the Wi-Fi router. Using your common sense as a human being, you realize that a router shouldn&#39;t have a light like that. You push it to the ground with your paws.
 The router falls into pieces, revealing the components inside. There is a hidden &#39;&#39;spy camera&#39;&#39;.
 
 [[Check the desk]]
-[[Analyse the situation]]</tw-passagedata><tw-passagedata pid="20" name="Check the desk" tags="" position="2300,800" size="100,100">You come across a notebook, and by examining the torn edges and the marks left by a pen on the next empty page, it&#39;s evident that some pages with writing have been &#39;&#39;ripped out&#39;&#39;.
+[[Analyse the situation]]</tw-passagedata><tw-passagedata pid="20" name="Check the desk" tags="" position="2750,1450" size="100,100">You come across a notebook, and by examining the torn edges and the marks left by a pen on the next empty page, it&#39;s evident that some pages with writing have been &#39;&#39;ripped out&#39;&#39;.
 
 Under a stack of dusty books lies a business card that appears to have just been newly received. It is for a &#39;&#39;commercial rental warehouse&#39;&#39;, with an address and a phone number printed on the card.
 
 A finished latte cup sits nearby. The logo on the cup says &quot;&#39;&#39;Press Pause&#39;&#39;,&quot; the shop where you buy coffee every day. The remnants in the cup gives off a &#39;&#39;subtle odor&#39;&#39;, similar to what you just smelled in your human body&#39;s mouth.
 
 [[You catch a very unnoticeable light, flashing]]
-[[Analyse the situation]] </tw-passagedata><tw-passagedata pid="21" name="Analyse the situation" tags="analyse" position="2400,1000" size="100,100">&quot;I&#39;ve been under &#39;&#39;surveillance&#39;&#39;, probably for a while. They even came to my house, and I never knew?&quot;
+[[Analyse the situation]] </tw-passagedata><tw-passagedata pid="21" name="Analyse the situation" tags="analyse" position="2900,1275" size="100,100">&quot;I&#39;ve been under &#39;&#39;surveillance&#39;&#39;, probably for a while. They even came to my house, and I never knew?&quot;
 
 &quot;I was &#39;&#39;poisoned&#39;&#39; by something in the latte.&quot;
 
@@ -190,15 +244,15 @@ A finished latte cup sits nearby. The logo on the cup says &quot;&#39;&#39;Press
 
 &quot;The key in the pocket of my jeans must be to that private &#39;&#39;rental warehouse.&#39;&#39;&quot;
 
-[[Go to the address on the bussiness card]] </tw-passagedata><tw-passagedata pid="22" name="Go to the address on the bussiness card" tags="" position="2400,1300" size="100,100">As you enter the dimly lit &#39;&#39;warehouse&#39;&#39;, you find a man inside who has collapsed to the ground. Taking a closer look at his body, you notice there are no wounds other than a tiny pinhole in the back of his neck. He has no heartbeat, and his body is still warm.
+[[Go to the address on the bussiness card]] </tw-passagedata><tw-passagedata pid="22" name="Go to the address on the bussiness card" tags="" position="3100,1450" size="100,100">As you enter the dimly lit &#39;&#39;warehouse&#39;&#39;, you find a man inside who has collapsed to the ground. Taking a closer look at his body, you notice there are no wounds other than a tiny pinhole in the back of his neck. He has no heartbeat, and his body is still warm.
 
 [[Finding his belongings]]
-[[Observing the environment]]</tw-passagedata><tw-passagedata pid="23" name="Go to the coffee shop" tags="" position="2200,1100" size="100,100">Following the scent of coffee, you find the coffee shop, &#39;&#39;Press Pause&#39;&#39;, only a block away.
+[[Observing the environment]]</tw-passagedata><tw-passagedata pid="23" name="Go to the coffee shop" tags="" position="3075,1175" size="100,100">Following the scent of coffee, you find the coffee shop, &#39;&#39;Press Pause&#39;&#39;, only a block away.
 
 Tailing a customer who pushes open the glass door, you sneak into the coffee shop.
 
 [[Observing Barista and Eavesdropping]]
-[[Explore the environment]]</tw-passagedata><tw-passagedata pid="24" name="Observing Barista and Eavesdropping" tags="" position="2100,800" size="100,100">Using your feline charm, you approach the baristas and staff, weaving between legs and purring softly.
+[[Explore the environment]]</tw-passagedata><tw-passagedata pid="24" name="Observing Barista and Eavesdropping" tags="" position="3300,900" size="100,100">Using your feline charm, you approach the baristas and staff, weaving between legs and purring softly.
 
 As one of the young baristas crouches down to pat your back, you smell that he carries the same &#39;&#39;odor&#39;&#39; as in the remnants of that latte.
 
@@ -207,17 +261,17 @@ As one of the young baristas crouches down to pat your back, you smell that he c
 Adam stands up, walks to the back door, and signs the sign-in sheet before leaving.
 
 [[Try to see what he signs]]
-[[Explore the environment]]</tw-passagedata><tw-passagedata pid="25" name="Explore the environment" tags="" position="2000,1000" size="100,100">Cruising round the coffee shop, you spot a bin in the corner with a lot of small bills thrown into it. You pull out the one with &#39;&#39;S.E.&#39;&#39; written on it, as is the usual practice in this shop, to write the customer&#39;s initials on the ticket. 
+[[Explore the environment]]</tw-passagedata><tw-passagedata pid="25" name="Explore the environment" tags="" position="3300,1100" size="100,100">Cruising round the coffee shop, you spot a bin in the corner with a lot of small bills thrown into it. You pull out the one with &#39;&#39;S.E.&#39;&#39; written on it, as is the usual practice in this shop, to write the customer&#39;s initials on the ticket. 
 
 The time on it is 8:16 am.
 
-[[Travel back to 8 am this morning]] </tw-passagedata><tw-passagedata pid="26" name="Try to see what he signs" tags="" position="1900,600" size="100,100">You purposely jump up and kick the sign-in book down to the floor. You see that this man&#39;s name, Adam, appears for the first time. It&#39;s his first day on the job, and his shift is only in the morning from 8-12.
+[[Travel back to 8 am this morning]] </tw-passagedata><tw-passagedata pid="26" name="Try to see what he signs" tags="" position="3550,675" size="100,100">You purposely jump up and kick the sign-in book down to the floor. You see that this man&#39;s name, Adam, appears for the first time. It&#39;s his first day on the job, and his shift is only in the morning from 8-12.
 
 You normally come here every morning &#39;&#39;between 10-11 am&#39;&#39;.
 
 Because of your troublesome behavior, the staff shuts you out of the shop, and you can&#39;t go back in.
 
-[[Travel back to 10 am this morning]]</tw-passagedata><tw-passagedata pid="27" name="Travel back to 10 am this morning" tags="" position="1700,500" size="100,100">Time is back to 10 am.
+[[Travel back to 10 am this morning]]</tw-passagedata><tw-passagedata pid="27" name="Travel back to 10 am this morning" tags="" position="3750,600" size="100,100">Time is back to 10 am.
 
 You aim at the barista, &#39;&#39;Adam&#39;&#39;, and jump up on the bar, and ungracefully leave a few hard cuts with your paws on his hand that is holding a cup of hot coffee. His hand is bleeding badly. The manager tells him to deal with the wound and go home, and not to work today&#39;s shift.
 
@@ -225,16 +279,16 @@ You were thrown out of the coffee shop.
 
 [[Stalking the barista.]]
 [[Run home immediately]]
-</tw-passagedata><tw-passagedata pid="28" name="Run home immediately" tags="halfending" position="1100,500" size="100,100">Upon arriving home, you find your original human body collapsed on the floor. 
+</tw-passagedata><tw-passagedata pid="28" name="Run home immediately" tags="halfending" position="4025,525" size="100,100">Upon arriving home, you find your original human body collapsed on the floor. 
 On the table, there&#39;s a half-full coffee cup labeled with&#39;&#39; Press Pause&#39;&#39;. 
 You&#39;re extremely baffled, as you believe you&#39;ve prevented the barista from poisoning you in the latte.
 
-[[Restart-&gt;Start]]</tw-passagedata><tw-passagedata pid="29" name="Stalking the barista." tags="" position="1550,650" size="100,100">You keep a distance of five or six meters and follow Adam quietly. He takes away a sandwich from a nearby deli. Instead of going home, he walks to a nearby park.
+[[Restart-&gt;Start]] </tw-passagedata><tw-passagedata pid="29" name="Stalking the barista." tags="" position="4000,750" size="100,100">You keep a distance of five or six meters and follow Adam quietly. He takes away a sandwich from a nearby deli. Instead of going home, he walks to a nearby park.
 
 Although there are a few empty benches, he choose to sit down on one where there is a person sitting on it, starting to eat his sandwich.
 
 [[Sneaking under the bench to eavesdrop]]
-[[Hiding in the bushes]]</tw-passagedata><tw-passagedata pid="30" name="Sneaking under the bench to eavesdrop" tags="" position="1700,800" size="100,100">You hear their conversation clearly.
+[[Hiding in the bushes]]</tw-passagedata><tw-passagedata pid="30" name="Sneaking under the bench to eavesdrop" tags="" position="3825,825" size="100,100">You hear their conversation clearly.
 
 Stranger: Did the target go there? How are things going?
 Adam: It&#39;s done. He came early today.
@@ -245,7 +299,7 @@ A dog walking in the park sees you and runs towards you, barking.
 Adam looks under the bench and spots you.
 He reaches out his unwounded hand and grabs you by your neck, and throws you into the pond.
 
-[[Sink and Blacked out]]</tw-passagedata><tw-passagedata pid="31" name="Hiding in the bushes" tags="" position="1300,600" size="100,100">They were talking at a very low volume. Even if you have the hearing of a cat, there&#39;s no way to hear complete sentences.
+[[Sink and Blacked out]]</tw-passagedata><tw-passagedata pid="31" name="Hiding in the bushes" tags="" position="4250,625" size="100,100">They were talking at a very low volume. Even if you have the hearing of a cat, there&#39;s no way to hear complete sentences.
 
 Stranger: ...target...here...doing?
 Adam: ...done...early
@@ -255,7 +309,7 @@ Adam: ...went well .... I took care of...
 &quot;&#39;&#39;Done?&#39;&#39; I think I haven&#39;t gone there.&quot;
 A sense of foreboding overwhelms you.
 
-[[Run home immediately]]</tw-passagedata><tw-passagedata pid="32" name="Sink and Blacked out" tags="start" position="1900,850" size="100,100">You heard that mysterious voice again.
+[[Run home immediately]]</tw-passagedata><tw-passagedata pid="32" name="Sink and Blacked out" tags="start" position="3600,850" size="100,100">You heard that mysterious voice again.
 
 &quot;Wake up&quot;...
 ...
@@ -263,7 +317,7 @@ A sense of foreboding overwhelms you.
 ...
 &quot;Wake up right now&quot;
 
-[[Open your eyes -&gt;Observing Barista and Eavesdropping]]</tw-passagedata><tw-passagedata pid="33" name="Travel back to 8 am this morning" tags="" position="1800,1100" size="100,100">Time is back to 8 am.
+[[Open your eyes -&gt;Observing Barista and Eavesdropping]]</tw-passagedata><tw-passagedata pid="33" name="Travel back to 8 am this morning" tags="" position="3500,1100" size="100,100">Time is back to 8 am.
 
 You find yourself sitting in your own flat. Echo comes over and rubs your leg. You&#39;re human now instead of a cat. Still carrying the memories from when you became a cat, you know you won&#39;t be able to go to that coffee shop today. Or maybe not even be able to go there again.
 
@@ -273,17 +327,19 @@ A schedule reminder pops up on your phone: 10 am, usual place, &#39;&#39;Sam&#39
 
 You pick up the business card and read the address again, casually tucking it under the pile of books on your desk. You put your keys in your pocket.
 
-[[Going out]]</tw-passagedata><tw-passagedata pid="34" name="Going out" tags="" position="1600,1100" size="100,100">You think about the fact that there is a spy camera in your house. You strongly suspect that you are now being &#39;&#39;followed or monitored&#39;&#39;as well. How are you going to meet?
+[[Going out]]</tw-passagedata><tw-passagedata pid="34" name="Going out" tags="choosing" position="3675,1150" size="100,100">You think about the fact that there is a spy camera in your house. You strongly suspect that you are now being &#39;&#39;followed or monitored&#39;&#39;as well. How are you going to meet?
 
 [[Car may have been tagged with a locator device. Take the bus.]]
-[[It may be difficult to spot a stalker in public. Go by car.]]</tw-passagedata><tw-passagedata pid="35" name="Car may have been tagged with a locator device. Take the bus." tags="halfending" position="1350,850" size="100,100">You decide to take public transport to the meeting. 
+[[It may be difficult to spot a stalker in public. Go by car.]]
+
+</tw-passagedata><tw-passagedata pid="35" name="Car may have been tagged with a locator device. Take the bus." tags="halfending" position="3850,1050" size="100,100">You decide to take public transport to the meeting. 
 
 Just as you are crossing the road, a runaway car comes crashing towards you. 
 You feel your feet leave the ground, and your whole body is violently bumped as you fall out. 
 
 The logo on the car reads, &quot;&#39;&#39;Press Pause&#39;&#39;&quot;.
 
-[[Restart-&gt;Start]]</tw-passagedata><tw-passagedata pid="36" name="It may be difficult to spot a stalker in public. Go by car." tags="" position="1400,1100" size="100,100">You drive out carefully. On the way, you keep looking through your rear-view mirror to see if there is a stalker. You deliberately parked the car a hundred meters away from your destination to make sure there was no one following you before heading towards the rented warehouse.
+[[Restart-&gt;Start]] </tw-passagedata><tw-passagedata pid="36" name="It may be difficult to spot a stalker in public. Go by car." tags="" position="3850,1200" size="100,100">You drive out carefully. On the way, you keep looking through your rear-view mirror to see if there is a stalker. You deliberately parked the car a hundred meters away from your destination to make sure there was no one following you before heading towards the rented warehouse.
 
 Pulling the key from your pocket, you unlock the warehouse door, but the scene before you lets you know it&#39;s too late.
 
@@ -291,25 +347,25 @@ Pulling the key from your pocket, you unlock the warehouse door, but the scene b
 
 You figure the only way to keep yourself safe now might be to put yourself in the spotlight.
 
-[[Go back home and publish the article]]</tw-passagedata><tw-passagedata pid="37" name="Observing the environment" tags="" position="2200,1500" size="100,100">After walking around the dimly lit warehouse, thanks to your feline night vision, you see some barely noticeable &#39;&#39;traces&#39;&#39; on the floor. This trail enters from through the back door, circles around a large shelf, follows Sam&#39;s shoe prints for a few more steps, overlaps around where Sam collapsed, extends in the direction to the back door, and eventually disappears.
+[[Go back home and publish the article]]</tw-passagedata><tw-passagedata pid="37" name="Observing the environment" tags="" position="3300,1550" size="100,100">After walking around the dimly lit warehouse, thanks to your feline night vision, you see some barely noticeable &#39;&#39;traces&#39;&#39; on the floor. This trail enters from through the back door, circles around a large shelf, follows Sam&#39;s shoe prints for a few more steps, overlaps around where Sam collapsed, extends in the direction to the back door, and eventually disappears.
 
 [[Finding his belongings]]
-[[Analyse]]</tw-passagedata><tw-passagedata pid="38" name="Finding his belongings" tags="" position="2100,1300" size="100,100">In the inside pocket of his jacket was an employee ID card, revealing the man&#39;s name as &#39;&#39;Sam&#39;&#39; and his position in the government&#39;s information technology department.
+[[Analyse]]</tw-passagedata><tw-passagedata pid="38" name="Finding his belongings" tags="" position="3300,1350" size="100,100">In the inside pocket of his jacket was an employee ID card, revealing the man&#39;s name as &#39;&#39;Sam&#39;&#39; and his position in the government&#39;s information technology department.
 
 His mobile phone is under his body, and it requires a great deal of effort for you as a cat to move. You unlock the phone using Sam&#39;s fingerprint. You find that he called Skyler at &#39;&#39;10:10 am&#39;&#39; using an encrypted communication App, and he missed two regular incoming calls from &quot;Daughter&quot; at &#39;&#39;10:13 am&#39;&#39;.
 
 Within the encrypted communication App, you find that Skyler sent Sam &#39;&#39;a file&#39;&#39; titled &quot;(DRAFT) Deadlier than Virus: How Government-Sponsored Disinformation Affects the Severity of the COVID-19 Infection.pdf&quot; at &#39;&#39;8:02 am&#39;&#39;.
 
 [[Observing the environment]]
-[[Analyse]]</tw-passagedata><tw-passagedata pid="39" name="Analyse" tags="analyse" position="1950,1450" size="100,100">&quot;I&#39;m the one who asked Sam to meet me here. He was a &#39;&#39;government insider&#39;&#39; who acted as an informant and provided me with evidences. The government was manipulating disinformation and caused the epidemic to spread.&quot;
+[[Analyse]]</tw-passagedata><tw-passagedata pid="39" name="Analyse" tags="analyse" position="3450,1450" size="100,100">&quot;I&#39;m the one who asked Sam to meet me here. He was a &#39;&#39;government insider&#39;&#39; who acted as an informant and provided me with evidences. The government was manipulating disinformation and caused the epidemic to spread.&quot;
 
 &quot;Someone knew we were going to meet here, and he came to ambush Sam. This killer should&#39;ve known I couldn&#39;t make it. Is he related to the person who killed me?&quot;
 
 [[Draw up a plan]]
-</tw-passagedata><tw-passagedata pid="40" name="Travel back to 8 am" tags="" position="1625,1600" size="100,100">Breathing heavily, you open your eyes, and you&#39;re back at 8 o&#39;clock. 
+</tw-passagedata><tw-passagedata pid="40" name="Travel back to 8 am" tags="" position="3800,1600" size="100,100">Breathing heavily, you open your eyes, and you&#39;re back at 8 o&#39;clock. 
 Echo comes over and rubs your leg. You are now human again, and you are Skyler Evans. Your heart is still beating hard from what you saw as a cat.
 
-[[You remember everything]]</tw-passagedata><tw-passagedata pid="41" name="Travel back to 10 am to save Sam" tags="" position="1600,1300" size="100,100">You&#39;re back at 10 am.
+[[You remember everything]]</tw-passagedata><tw-passagedata pid="41" name="Travel back to 10 am to save Sam" tags="" position="3825,1425" size="100,100">You&#39;re back at 10 am.
 
 Now aware of what&#39;s going to happen in the next 13 minutes, you climb to a high platform in the warehouse and observe from above. A figure in a black trenchcoat moves against the walls and shelves, seemingly looking for a place to hide.
 
@@ -317,35 +373,27 @@ At 10:06 am, Sam opens the front door with a key and switches on the lights. The
 
 The killer is on the move!
 
-[[Yell and Jump downward]]</tw-passagedata><tw-passagedata pid="42" name="Yell and Jump downward" tags="halfending" position="1100,1300" size="100,100">When the figure in the black trenchcoat is three steps away from Sam, you meow abruptly and jump downward to Sam&#39;s back. Startled, Sam looks backward and spot the killer.
+[[Yell and Jump downward]]</tw-passagedata><tw-passagedata pid="42" name="Yell and Jump downward" tags="halfending" position="4000,1400" size="100,100">When the figure in the black trenchcoat is three steps away from Sam, you meow abruptly and jump downward to Sam&#39;s back. Startled, Sam looks backward and spot the killer.
 
 Thanks to his MMA training, Sam overpowers the killer and knocks him out, quickly escaping the warehouse.
 
 He should be safe for now, but you&#39;ve &#39;&#39;lost the chance&#39;&#39; to turn back into Skyler.
 
-[[Restart-&gt;Start]]
-</tw-passagedata><tw-passagedata pid="43" name="You remember everything" tags="" position="1450,1600" size="100,100">&quot;I was poisoned by something in the coffee.&quot;
+[[Restart-&gt;Start]] </tw-passagedata><tw-passagedata pid="43" name="You remember everything" tags="" position="3950,1600" size="100,100">&quot;I was poisoned by something in the coffee.&quot;
 &quot;It&#39;s not safe at home.&quot;
 
 [[Raise security level]]
-</tw-passagedata><tw-passagedata pid="44" name="Raise security level" tags="" position="1300,1600" size="100,100">You pretend to accidentally bump into the router to the floor. The spy camera is exposed, and you stomp on it and throw it in the trash.
+</tw-passagedata><tw-passagedata pid="44" name="Raise security level" tags="" position="4100,1600" size="100,100">You pretend to accidentally bump into the router to the floor. The spy camera is exposed, and you stomp on it and throw it in the trash.
 
 You lock the door and windows and draw the curtains.
 
 You haven&#39;t received Sam&#39;s fact-checking feedback on the draft. Simultaneously, you want to convince Sam to become a non-anonymous whistleblower, knowing it will increase the impact of the story. That&#39;s what your meeting will be about.
 
-However, time is running out. To protect yourself and Sam, your best option may be to publish the article—putting your name and Sam&#39;s name in the spotlight to save you two from being assassinated.
-
-But such a direct publication could have a major impact on Sam&#39;s future, and your own professional credibility would be greatly diminished.
-
-What will you choose to do?
-
-[[Publish article directly]]
-[[Withhold publication and contact Sam]]</tw-passagedata><tw-passagedata pid="45" name="Withhold publication and contact Sam" tags="" position="1100,1700" size="100,100">You send Sam a message via encryption software: &quot;The situation has changed. Don&#39;t go. Find a safe place, and I&#39;ll call you in 5.&quot;
+[[What to do next?]]</tw-passagedata><tw-passagedata pid="45" name="Withhold publication and contact Sam" tags="" position="4375,1750" size="100,100">You send Sam a message via encryption software: &quot;The situation has changed. Don&#39;t go. Find a safe place, and I&#39;ll call you in 5.&quot;
 
 You enter your room, close the door, hide into the closet, and call Sam. You explain to Sam about the situation both of you are in, proposing to publish the article immediately. Sam finds your explanation hard to believe, but at the same time he is too scared to ignore it. He believes that revealing his name would put him in great danger and asks to retract all the information he has given you and does not agree to its publication.
 
-[[Hang up the phone]]</tw-passagedata><tw-passagedata pid="46" name="Publish article directly" tags="" position="1100,1500" size="100,100">You log into your news site account and publish the article.
+[[Hang up the phone]]</tw-passagedata><tw-passagedata pid="46" name="Publish article directly" tags="" position="4375,1450" size="100,100">You log into your news site account and publish the article.
 
 A quick message goes out to your chief editor, &quot;The article is live. It&#39;s crucial; please mobilize as many resources as possible to amplify its reach. Not just for me and Sam, but for the public too. I&#39;ll fill you in on the details later today.&quot;
 
@@ -353,13 +401,13 @@ The article makes headlines. Clicks keep rolling in. Within half a day, a dozen 
 
 Just then, Sam&#39;s calling.
 
-[[Answer Sam&#39;s call]]</tw-passagedata><tw-passagedata pid="47" name="Answer Sam&#39;s call" tags="Ending" position="900,1500" size="100,100">You pick up Sam&#39;s phone. He sounds furious, questioning why you published the article and revealed his name without his permission.
+[[Answer Sam&#39;s call]]</tw-passagedata><tw-passagedata pid="47" name="Answer Sam&#39;s call" tags="Ending" position="4525,1375" size="100,100">You pick up Sam&#39;s phone. He sounds furious, questioning why you published the article and revealed his name without his permission.
 
 After a deep breath, you respond, &quot;Thank goodness you&#39;re alive. We both are. We&#39;re safe now.&quot;
 
 &quot;Who sent me that mysterious message at the beginning?&quot; There is one question remained unsolved.
 
-To be continued...</tw-passagedata><tw-passagedata pid="48" name="Hang up the phone" tags="Ending" position="900,1700" size="100,100">You shoot off an email to the chief editor using your personal email: &quot;The article we discussed earlier is a no-go. Redirect the resources to another story. I&#39;ll look for a fresh one.&quot;
+To be continued...</tw-passagedata><tw-passagedata pid="48" name="Hang up the phone" tags="Ending" position="4525,1800" size="100,100">You shoot off an email to the chief editor using your personal email: &quot;The article we discussed earlier is a no-go. Redirect the resources to another story. I&#39;ll look for a fresh one.&quot;
 
 As you close your laptop, a sense of emptiness settles in.
 
@@ -367,7 +415,7 @@ You reflect, &quot;By now, those who are monitoring me must be aware. We should 
 
 &quot;Who sent me that mysterious message at the beginning?&quot; There is one question remained unsolved.
 
-To be continued...</tw-passagedata><tw-passagedata pid="49" name="Go back home and publish the article" tags="Ending" position="1200,1100" size="100,100">When you return home, the first thing you do is pretend to accidentally bump into the router to the floor. The spy camera is exposed, and you stomp on it and throw it in the trash.
+To be continued...</tw-passagedata><tw-passagedata pid="49" name="Go back home and publish the article" tags="Ending" position="4025,1275" size="100,100">When you return home, the first thing you do is pretend to accidentally bump into the router to the floor. The spy camera is exposed, and you stomp on it and throw it in the trash.
 
 You lock the door and windows and draw the curtains.
 
@@ -381,13 +429,34 @@ You let out a long breath, finally safe now. But &#39;&#39;not for Sam&#39;&#39;
 
 &quot;Who sent me that mysterious message at the beginning?&quot; There is one question remained unsolved.
 
-To be continued...</tw-passagedata><tw-passagedata pid="50" name="Draw up a plan" tags="analyse" position="1775,1450" size="100,100">&quot;Sam called me at 10:10 am, but was no longer able to pick up the phone at 10:13 am. It is highly likely that he was killed in those 3 minutes. The killer&#39;s trail is clear. I should&#39;ve been able to stop him.&quot;
+To be continued...</tw-passagedata><tw-passagedata pid="50" name="Draw up a plan" tags="analyse" position="3600,1450" size="100,100">&quot;Sam called me at 10:10 am, but was no longer able to pick up the phone at 10:13 am. It is highly likely that he was killed in those 3 minutes. The killer&#39;s trail is clear. I should&#39;ve been able to stop him.&quot;
 
 Will you save Sam? Remember, you can only travel back in time once by your own choice.
 [[Travel back to 10 am to save Sam]]
 
 &quot;I have basically figured out what happened. I sent him the draft at 8:02 am. As a journalist who often writes overnight, I probably stayed up to finish the draft. Anyway, I should&#39;ve been alive at that time. Was it the so-called pivot point?”
-[[Travel back to 8 am]]</tw-passagedata></tw-storydata>
+[[Travel back to 8 am]]</tw-passagedata><tw-passagedata pid="51" name="What to do next?" tags="analyse" position="4275,1600" size="100,100">However, time is running out. To protect yourself and Sam, your best option may be to publish the article—putting your name and Sam&#39;s name in the spotlight to save you two from being assassinated.
+
+But such a direct publication could have a major impact on Sam&#39;s future, and your own professional credibility would be greatly diminished.
+
+What will you choose to do?
+
+[[Publish article directly]]
+[[Withhold publication and contact Sam]]</tw-passagedata><tw-passagedata pid="52" name="You feel something" tags="" position="1625,1425" size="100,100">&lt;div&gt;
+Being a cat, you become way more sensitive to almost everything around you - temperature, sound, light, and smell, except for color.
+
+&quot;The smell?&quot; You notice an abnormal odor. You&#39;ve been smelling it since you woke up, but only till now do you realize what it is.
+
+&quot;Gas leak!&quot;
+
+You sprint toward the &#39;&#39;gas valve&#39;&#39;.
+
+Next to the gas valve, you find a puddle of water. You look up and see a lighter on an &#39;&#39;ice-made holder&#39;&#39; that is slowly melting in the sun.
+
+[[Try turning off the gas]]
+
+&lt;/div&gt;
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
